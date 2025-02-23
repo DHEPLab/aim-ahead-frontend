@@ -1,5 +1,5 @@
 FROM node:lts-alpine as builder
-
+RUN apk add --update --no-cache g++ make py3-pip
 WORKDIR /app
 
 COPY package*.json ./
